@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iMotivate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfw-BT-TpT">
+                                <rect key="frame" x="116" y="152" width="368" height="295"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thought for the Day!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTG-n3-Z3H">
+                                        <rect key="frame" x="77" y="20" width="215" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="215" id="YLg-PS-2Ob"/>
+                                            <constraint firstAttribute="height" constant="34" id="h4u-Qa-5jO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SbA-dT-vvS">
+                                        <rect key="frame" x="8" y="76" width="352" height="206"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="352" id="377-xC-XRL"/>
+                                            <constraint firstAttribute="height" constant="206" id="6Zh-hG-hnn"/>
+                                        </constraints>
+                                        <string key="text">What man actually needs is not a tensionless state but rather the striving and struggling for some goal worthy of him. What he needs is not the discharge of tension at any cost, but the call of a potential meaning waiting to be fulfilled by him. -Viktor Frankl
+</string>
+                                        <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="SbA-dT-vvS" firstAttribute="top" secondItem="aTG-n3-Z3H" secondAttribute="bottom" constant="22" id="0Xb-5w-sDq"/>
+                                    <constraint firstItem="SbA-dT-vvS" firstAttribute="trailing" secondItem="bfw-BT-TpT" secondAttribute="trailingMargin" id="78p-Uq-hFd"/>
+                                    <constraint firstItem="aTG-n3-Z3H" firstAttribute="leading" secondItem="bfw-BT-TpT" secondAttribute="leading" constant="77" id="ApZ-ID-bJD"/>
+                                    <constraint firstItem="aTG-n3-Z3H" firstAttribute="top" secondItem="bfw-BT-TpT" secondAttribute="top" constant="20" id="TYq-Qi-Aaz"/>
+                                    <constraint firstAttribute="bottom" secondItem="SbA-dT-vvS" secondAttribute="bottom" constant="13" id="UrC-g9-xdb"/>
+                                    <constraint firstItem="SbA-dT-vvS" firstAttribute="leading" secondItem="bfw-BT-TpT" secondAttribute="leadingMargin" id="XlW-uA-w3o"/>
+                                    <constraint firstItem="aTG-n3-Z3H" firstAttribute="centerX" secondItem="SbA-dT-vvS" secondAttribute="centerX" id="vjy-S2-aq5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bfw-BT-TpT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Set-MW-3UX"/>
+                            <constraint firstItem="bfw-BT-TpT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="132" id="hsB-i2-5Hp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="quoteTextView" destination="SbA-dT-vvS" id="eSr-CL-zBx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
